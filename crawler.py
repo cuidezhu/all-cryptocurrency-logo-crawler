@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # @Author: cui
 # @Date:   2018-03-07 15:57:51
-# @Last Modified by:   cui
-# @Last Modified time: 2018-03-07 16:42:34
+# @Last Modified by:   cuidezhu
+# @Last Modified time: 2018-03-08 14:32:53
 
 import re, requests, urllib2, json, time
 
@@ -15,7 +15,6 @@ data = page.read()
 #转换成python中的字典格式，用json.loads()方法
 ddata = json.loads(data)
 
-#循环获取titile属性的值
 len = len(ddata)
 
 for i in range(0,len):
